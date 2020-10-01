@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -11,13 +12,13 @@ const NavBar = () => {
 
   return (
     <nav>
-      <h1 className="nav-name" id="headings">Cmpny X</h1>
+      <NavLink className="nav-links" to="/"><h1 className="nav-name" id="headings">Cmpny X</h1></NavLink>
       <ul className={`nav-list ${visibility ? 'nav-displayed' : ''}`}>
-        <li className="nav-links"><a href="#">Somewhere</a></li>
-        <li className="nav-links"><a href="#">Link</a></li>
-        <li className="nav-links"><a href="#">Location</a></li>
-        <li className="nav-links"><a href="#">Blog</a></li>
-        <li className="nav-links"><a href="#">Abous Us</a></li>
+        <li><NavLink className="nav-links" to="/">Products & Solutions</NavLink></li>
+        <li><NavLink className="nav-links" to="/">Services & Consulting</NavLink></li>
+        <li><NavLink className="nav-links" to="/">Affiliates</NavLink></li>
+        <li><NavLink className="nav-links" to="/blog" activeClassName="current-page">Blog</NavLink></li>
+        <li><NavLink className="nav-links" to="/about" activeClassName="current-page">About Us</NavLink></li>
       </ul>
       <div className="hamburger" onClick={toggleDisplay}>
         <div className="lines"></div>
