@@ -1,0 +1,41 @@
+.blog-container {
+	margin-top: 6rem;
+}
+
+h1 {
+	text-align: center;
+}
+
+.blog-post {
+	margin: 1rem auto;
+	padding: 1rem;
+	border: 2px solid black;
+	border-radius: 1rem;
+	width: 40%;
+	text-align: center;
+}
+
+.blog-title {
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin-bottom: 1rem;
+}
+
+.blog-body {
+}
+
+.blog-user {
+	font-size: .8rem;
+	font-style: italic;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+	.blog-post {
+		width: 75%;
+	}
+}

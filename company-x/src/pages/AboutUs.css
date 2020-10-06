@@ -1,0 +1,85 @@
+.about-content {
+	margin: 10rem 20rem 10rem 20rem;
+}
+
+.about-content > h1 {
+	font-family: var(--headings);
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 2.5rem;
+}
+
+.map-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: 2px solid black;
+	border-radius: 1rem;
+	padding: 2rem;
+}
+
+.map-container > h1 {
+	font-family: var(--headings);
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 2.5rem;
+	flex: 0 0 100%;
+}
+
+.map-text {
+	width: 50%;
+}
+
+.google-map {
+	width: 50%;
+	height: 400px;
+}
+
+.pin {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	padding: .5rem;
+	border-radius: 1rem;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.pin-text {
+	text-align: center;
+	font-size: 1rem;
+	padding: .4rem;
+}
+
+.pin:after {
+	content: " ";
+	position: absolute;
+	right: 100%; /* To the left of the tooltip */
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent var(--black) transparent transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+	.about-content {
+		margin: 10rem 2rem 10rem 2rem;
+	}
+
+	.map-text {
+		width: 100%;
+	}
+
+	.google-map {
+		width: 100%;
+	}
+
+	.pin-text {
+		text-align: center;
+		font-size: .8rem;
+		padding: .2rem;
+	}
+
+	.pin:after {
+		border-width: 8px;
+	}
+}
